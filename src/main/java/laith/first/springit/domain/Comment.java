@@ -7,7 +7,8 @@ import lombok.NonNull;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.util.Objects;
+import javax.persistence.ManyToOne;
+
 @Entity
 @NoArgsConstructor
 @Data
@@ -18,6 +19,8 @@ public class Comment {
     @NonNull
     private String body;
     //Link
+    @ManyToOne
+    private Link link;
 
 
 }
