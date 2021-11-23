@@ -8,4 +8,5 @@ import java.util.List;
 public interface LinkRepository extends JpaRepository<Link,Long> {
   /* Link findByTitle(String title);//spring jpa under the hood will create this method for us
    List<Link> findAllByTitleLikeOrderByCreationDateDesc(String title);*/
+
 }
